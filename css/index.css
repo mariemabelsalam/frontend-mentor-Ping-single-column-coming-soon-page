@@ -1,0 +1,35 @@
+.input:focus {
+  box-shadow: none;
+  border-color: blue;
+}
+input::placeholder {
+  color: #c2d3ff !important;
+}
+input {
+  border: 1px solid #c2d3ff;
+}
+li {
+  width: 30px;
+  height: 30px;
+}
+
+li:hover {
+  background-color: #4f7df3;
+  transition: 0.8s;
+}
+li:hover i {
+  color: white !important;
+  transition: all 0.5s;
+}
+
+@media (max-width: 767px) {
+  .group {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .content .group input,
+  button {
+    width: 75% !important;
+    margin: auto;
+  }
+}
